@@ -29,7 +29,7 @@ void::PlatypusCLass::age_me() {
 		cout << "Chance of dying: " << death << "%" << endl;
 		// 2% იმის შანსი რომ იხვნისკარტა გახდეს მუტანტი
 		int mutation = rand() % 100;
-		if (mutation == 2)
+		if (mutation <= 2)
 			mutant = true;
 		cout << "Mutation status: " << boolalpha << mutant << endl;
 	}
@@ -109,7 +109,6 @@ void PlatypusCLass::printInfo() const {
 	cout << "=========================================================" << endl;
 }
 // Getter - ების და setter - ების იმპლემენტაცია
-// ვიცი რომ setter - ბეს const არუნდა დავუწერო უბრალოდ რახან არ ვცვლი არაფერს მაინც მივუწერე იმედია ქულა არ დამაკლდება :)
 float::PlatypusCLass::getWeight()const {
 	return weight;
 }
