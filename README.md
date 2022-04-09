@@ -13,10 +13,15 @@ Platypus class contains the following:
 Member variables:
 
 weight
+
 age 
+
 name
+
 gender
+
 a bool to indicate whether alive (or not)
+
 a bool to indicate whether mutant (or not)
 
 Member functions:
